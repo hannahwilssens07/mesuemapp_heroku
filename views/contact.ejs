@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/stylegriek.css">
+    <title></title>
+  </head>
+  <body>
+
+<%- include('header'); -%>
+
+  <div class="begin">
+    <h1>Wie zijn we?</h1>
+  </div>
+<div class="uitleg">
+
+
+  <div class="wie">
+    <h2>Museum brengt oudheid en archeologie tot leven</h2>
+    <h5 class="beschrijving1">Het Rijksmuseum van Oudheden brengt de oudheid en de archeologie tot leven. Iedereen kan in het museum genieten van de oude beschavingen uit Egypte, de Klassieke Wereld, het oude Nabije Oosten en Nederland in de prehistorie, Romeinse tijd en middeleeuwen. In 2018 bestond het museum tweehonderd jaar.</h5>
+    <img class="museum1" src="/afb/museum.jpg" alt="museumafb">
+    <img class="museum2" src="/afb/museum2.jpg" alt="museumafb">
+    <h3>Collectie</h3>
+    <h5 class="bes">De collectie van het Rijksmuseum van Oudheden bestaat uit circa 180.000 objecten, verdeeld over vier verzamelgebieden:</h5>
+    <ol>
+      <li>Egypte</li>
+      <li>Klassieke Oudheid (Grieken, Romeinen, Etrusken)</li>
+      <li>Oude Nabije Oosten</li>
+      <li>Nederland (prehistorie, Romeinse tijd, middeleeuwen)</li>
+    </ol>
+
+  </div>
+
+</div>
+
+
+    <section id="contact">
+
+        <div class="container">
+
+            <form name="htmlform" method="post">
+
+                <h2>Contact</h2>
+
+                  <input type="text" name="first_name" placeholder="NAME" required>
+
+                  <input  type="email" name="email" placeholder="MAIL" required>
+
+                  <textarea name="comments" placeholder="MESSAGE" required ></textarea>
+
+                  <button name="send" type="submit" class="submit">SEND</button>
+
+            </form>
+
+      </div>
+  </section>
+
+<%- include('footer'); -%>
+
+
+</body>
+</html>

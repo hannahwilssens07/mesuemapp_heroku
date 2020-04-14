@@ -1,0 +1,17 @@
+
+<%- include('header'); -%>
+
+    <h1>Griekse goden</h1>
+
+    <% for (let i=0; i<infos.length; i++) { %>
+      <section>
+          <%- include('god', {info: infos[i], index: i}); -%>
+</section>
+<% } // close forloop %>
+
+
+
+
+<script src="/js/script2.js"></script>
+
+<%- include('footer'); -%>

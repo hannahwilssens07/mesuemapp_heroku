@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/stylegriek.css">
+    <title></title>
+  </head>
+  <body>
+
+<%- include('header'); -%>
+
+
+        <a id="back" href="/tentoonstelling1"><img id="arrow" src="/afb/arrow.png" alt=""> Terug</a>
+
+            <h1><%= info.name%></h1>
+
+            <img id="kleiner2" src="/afb/<%= info.image%>">
+            <div class="raster2">
+              <img id="kleiner1" src="/afb/<%= info.image2%>">
+              <img id="kleiner1" src="/afb/<%= info.image3%>">
+            </div>
+            <p id="text"><%= info.kortinfo%></p>
+
+    <div class="strook">
+
+          <h2 class="know"> Get to know</h2>
+
+            <div class="profiel">
+              <img id="profiel" src="/afb/<%= info.image4%>">
+              <p class="font" id="onderwerp">Naam:</p>
+              <p class="font" id="onderwerp1">God van:</p>
+              <p class="font" id="onderwerp2">Geslacht:</p>
+              <p class="font" id="onderwerp3">OudGriek:</p>
+              <p class="font" id="onderwerp4">Familie:</p>
+              <p class="font" id="uitleg"><%= info.name%></p>
+              <p class="font" id="uitleg1"><%= info.god%></p>
+              <p class="font" id="uitleg2"><%= info.geslacht%></p>
+              <p class="font" id="uitleg3"><%= info.oudGrieks%></p>
+              <p class="font" id="uitleg4"><%= info.familie%></p>
+
+            </div>
+
+    </div>
+
+    <div class="strook2">
+      <h2 class="know">Verhaal</h2>
+      <p class="font"><%= info.extra%></p>
+      <img id="verhaal" src="/afb/<%= info.verhaal%>">
+        <img id="verhaal" src="/afb/<%= info.verhaal2%>">
+    </div>
+
+<%- include('footer'); -%>
+
+
+</body>
+</html>

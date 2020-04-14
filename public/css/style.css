@@ -1,0 +1,235 @@
+body{
+  background-color: black;
+}
+header{
+  height: 15rem;
+}
+
+
+.grid{
+  display: grid;
+  grid-template-columns: 50rem 5rem;
+  grid-gap: 1rem;
+  height: auto;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.logo{
+  grid-column: 1;
+  width: 50%;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 10rem;
+
+}
+.menu img{
+  grid-column: 2;
+  width: 5%;
+  position: fixed;
+  padding-top: 3rem;
+
+
+}
+
+h1{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin-left: 2rem;
+  font-size: 3rem;
+
+}
+
+h2{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+h3{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 2.3rem;
+}
+
+footer a{
+  text-decoration: none;
+}
+h4{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 2.3rem;
+}
+
+nav {
+    display: block;
+      opacity: 0;
+      height: 0rem;
+      width: 15rem;
+      line-height: 2rem;
+      overflow: hidden;
+      transition: all 1s;
+      margin-top: 1rem;
+      position: fixed;
+      left: 70vw;
+      right: 3rem;
+      top: 7rem;
+      line-height: 1rem;
+      background-color: #85784A;
+}
+
+nav a {
+      font-weight: 400;
+      text-decoration: none;
+      color: white;
+      font-family: sans-serif;
+      font-size: 1.5rem;
+      display: block;
+      line-height: 1.2rem;
+      padding: 2.3rem;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+nav a:hover {
+  color: black;
+}
+
+.zichtbaar {
+      opacity: 1;
+      visibility: visible;
+      height: 7rem;
+            height: 18rem;
+}
+
+
+
+.grid1{
+  display: grid;
+  grid-template-columns: 30rem 20rem;
+  grid-gap: 1rem;
+  height: auto;
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/afb/beelden.jpg);
+  background-size: cover;
+  margin-bottom: 4rem;
+}
+
+.griekseGod{
+  grid-column: 2;
+  padding-top: 24rem;
+  text-decoration: none;
+}
+
+.griekseGod h2:hover{
+ color: #85784A;
+}
+
+.grid2{
+  display: grid;
+  grid-template-columns: 30rem 20rem;
+  grid-gap: 1rem;
+  height: auto;
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/afb/egypte.jpg);
+  background-size: cover;
+  margin-bottom: 4rem;
+}
+
+.egypteGod{
+  grid-column: 2;
+  padding-top: 24rem;
+  text-decoration: none;
+}
+
+.egypteGod h2:hover{
+ color: #85784A;
+}
+
+.grid3{
+  display: grid;
+  grid-template-columns: 30rem 20rem;
+  grid-gap: 1rem;
+  height: auto;
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(/afb/europa.jpg);
+  background-size: cover;
+  margin-bottom: 4rem;
+}
+
+.europa{
+  grid-column: 2;
+  padding-top: 24rem;
+  text-decoration: none;
+}
+
+.europa h2:hover{
+ color: #85784A;
+}
+
+
+.footer{
+  width: 100%;
+  height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #85784A;
+  display: grid;
+  grid-template-columns: 35rem 50rem;
+  grid-gap: 3rem;
+}
+
+.flex{
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
+
+.leiden{
+  width: 20%;
+  padding-top: 3rem;
+}
+
+.bezoek{
+  grid-column: 2;
+  margin-left: 5rem;
+}
+
+.flex2{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+
+}
+.flex2 img{
+  width: 5%;
+  height: 5%;
+  padding-right: 2rem;
+
+}
+
+.raster3{
+  display: grid;
+  grid-template-columns: 20rem 20rem 20rem;
+  height: 30rem;
+
+}
+
+#kunst1{
+  width: 70%;
+}
