@@ -125,9 +125,6 @@ nav a:hover {
 
 
 .raster{
-
-  height: 40rem;
-  grid-gap: 1rem;
   margin-left: 1rem;
   margin-right: auto;
   display: block;
@@ -193,7 +190,7 @@ nav a:hover {
 
 #back{
   margin-left: 3rem;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 
