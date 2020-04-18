@@ -20,6 +20,12 @@ app.get('/contact', function(req, res){
   });
 });
 
+app.get('/openingsuren', function(req, res){
+  res.render('openingsuren', {
+
+  });
+});
+
 
 
 

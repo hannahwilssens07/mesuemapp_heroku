@@ -1,8 +1,4 @@
-let mijnMenu = document.querySelector(".menu");
-let mijnNav = document.querySelector("nav");
-mijnMenu.addEventListener("click", function() {
-  mijnNav.classList.toggle("zichtbaar");
-});
+
 
 
 var iso = new Isotope( '.raster', {
@@ -23,13 +19,24 @@ var $raster = $('.raster').isotope({
       category: '[data-category]',
   }
 });
-
+var filterFns = {
+  // show if number is greater than 50
+  numberGreaterThan50: function() {
+    var number = $(this).find('.number').text();
+    return parseInt( number, 10 ) > 50;
+  },
+  // show if name ends with -ium
+  ium: function() {
+    var name = $(this).find('.name').text();
+    return name.match( /ium$/ );
+  }
+};
 
 $('#filters').on( 'click', 'button', function() {
   var filterValue = $( this ).attr('data-filter');
   // use filterFn if matches value
   filterValue = filterFns[ filterValue ] || filterValue;
-  $grid.isotope({ filter: filterValue });
+  $raster.isotope({ filter: filterValue });
 });
 
 // change is-checked class on buttons
@@ -46,4 +53,24 @@ function onButtonGroupClick( event ) {
   var button = event.target;
   button.parentNode.querySelector('.is-checked').classList.remove('is-checked');
   button.classList.add('is-checked');
+}
+
+
+var $quicksearch = $('.quicksearch').keyup( debounce( function() {
+  qsRegex = new RegExp( $quicksearch.val(), 'gi' );
+  $raster.isotope();
+}, 200 ) );
+
+function debounce( fn, threshold ) {
+  var timeout;
+  threshold = threshold || 100;
+  return function debounced() {
+    clearTimeout( timeout );
+    var args = arguments;
+    var _this = this;
+    function delayed() {
+      fn.apply( _this, args );
+    }
+    timeout = setTimeout( delayed, threshold );
+  };
 }

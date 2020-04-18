@@ -125,6 +125,8 @@ nav a:hover {
 
 
 .raster{
+  display: grid;
+  height: 30rem;
   grid-gap: 1rem;
   margin-left: 1rem;
   margin-right: auto;
@@ -390,21 +392,37 @@ h5{
   font-size: 0.7rem;
   margin-left: -1.5rem;
   color: white;
-    color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
   font-size: 1.6rem;
 }
 
+.openingsuren{
+  width: 40rem;
+  height: 40rem;
+  color: white;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+
+.openingsuren ul{
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  line-height: 3rem;
+}
+
+
+
 #filters .button.is-checked{
-  background-color: red;
-  width: 2rem;
+  background-color: #85784A;
+  font-weight: 700;
 }
 .element-item {
   width: 80%;
   margin-left: 15%;
   margin-right: 10%;
-
   margin-bottom: 40px;
 }
 .element-item-after {
@@ -424,30 +442,37 @@ h5{
 }
 .button-group{
   margin-top: -2px;
-  width: 107%;
-  background-color: Black;
+  width: 100vw;
+  background-color: black;
   padding-bottom: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  border-top: 10px solid black;
+  grid-template-columns: 10rem 10rem 10rem;
+  grid-gap: 2rem;
+  margin-left: -2rem;
+  margin-right: auto;
+
+
 }
 .button-group button{
   background-color: black;
   color : white;
-  height: 100px;
-  font-size: 30px;
+  height: 4rem;
+  width: 10rem;
+  font-size: 2rem;
   border: none;
-  border-right: 5px solid white;
-
-
+  border-radius: 6rem;
+  border: solid 0.1rem white;
 
 }
-.button-group :nth-child(6){
-  border: none;
+
+.lol input{
+  border-radius: 6rem;
+  border: solid 0.1rem white;
+  margin-left: 2rem;
 }
 
-#filters .button{
-  height: 90px;
-  width: 90px;
-  background-color: blue;
+.quicksearch {
+  font-size: 1.4rem;
+  font-weight: bold;
+
 }
