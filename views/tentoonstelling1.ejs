@@ -3,15 +3,27 @@
 
     <h1>Griekse goden</h1>
 
+
+
+        <div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">Show all</button>
+          <button class="button" data-filter=".man">Man</button>
+          <button class="button" data-filter=".vrouw">Vrouw</button>
+
+
+        </div>
+            <p><input type="text" class="quicksearch" placeholder="Search for names.." size="5"></p>
+
+
     <% for (let i=0; i<infos.length; i++) { %>
-      <section>
+      <section class ="element-item <%=infos[i].geslacht %>" >
           <%- include('god', {info: infos[i], index: i}); -%>
+
 </section>
 <% } // close forloop %>
 
 
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="/js/isotope.js"></script>
 <script src="/js/script2.js"></script>
 
 <%- include('footer'); -%>

@@ -1,3 +1,5 @@
+@import url("https://use.typekit.net/qlj0rmj.css");
+
 body{
   background-color: black;
 }
@@ -73,6 +75,7 @@ p a{
   text-decoration: underline;
 }
 a{
+  font-size: 1.2rem;
   color: #85784A;
     font-family: 'Roboto', sans-serif;
   text-decoration: underline;
@@ -122,12 +125,11 @@ nav a:hover {
 
 
 .raster{
-  display: grid;
-  grid-template-columns: 30rem 15rem;
-  grid-template-rows: 3rem 30rem 10rem;
   grid-gap: 1rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
   margin-right: auto;
+  display: block;
+  margin-bottom: 3rem;
 }
 
 .raster2{
@@ -140,7 +142,8 @@ nav a:hover {
 .foto1{
   grid-column: 1;
   grid-row: 2;
-  width: 100%;
+  width: 80%;
+  padding-left: -5rem;
 
 }
 .titel{
@@ -156,17 +159,18 @@ nav a:hover {
   padding-top: 1rem;
 }
 .lezen{
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 3;
   width: 100%;
   font-size: 2rem;
-  padding-left: 5rem;
+  padding-left: 4rem;
+
 }
 
 
 #kleiner1{
   width: 80%;
-  margin-left: 6rem;
+  margin-left: 2rem;
 }
 #kleiner2{
   width: 70%;
@@ -174,7 +178,7 @@ nav a:hover {
 }
 
 #text{
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-left: 2rem;
   margin-top: 2rem;
   margin-right: 2rem;
@@ -186,7 +190,7 @@ nav a:hover {
 }
 
 #back{
-  margin-left: 2rem;
+  margin-left: 3rem;
 }
 
 
@@ -331,9 +335,9 @@ button{
 }
 .wie{
   display: grid;
-  grid-template-columns: 30rem 20rem;
+  grid-template-columns: 30rem 18rem;
   grid-template-rows: 10rem 20rem 8rem 10rem 5rem;
-  margin-left: 2rem;
+  margin-left: 3rem;
   margin-bottom: 10rem;
   grid-gap: 2rem;
 
@@ -390,4 +394,60 @@ h5{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
   font-size: 1.6rem;
+}
+
+#filters .button.is-checked{
+  background-color: red;
+  width: 2rem;
+}
+.element-item {
+  width: 80%;
+  margin-left: 15%;
+  margin-right: 10%;
+
+  margin-bottom: 40px;
+}
+.element-item-after {
+  width: 80%;
+  margin-left: 15%;
+  margin-right: 10%;
+  position: absolute;
+  z-index: 10;
+
+
+}
+
+.element-item-invisable{
+  display:  none;
+  position: absolute;
+  z-index: -10;
+}
+.button-group{
+  margin-top: -2px;
+  width: 107%;
+  background-color: Black;
+  padding-bottom: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  border-top: 10px solid black;
+}
+.button-group button{
+  background-color: black;
+  color : white;
+  height: 100px;
+  font-size: 30px;
+  border: none;
+  border-right: 5px solid white;
+
+
+
+}
+.button-group :nth-child(6){
+  border: none;
+}
+
+#filters .button{
+  height: 90px;
+  width: 90px;
+  background-color: blue;
 }
